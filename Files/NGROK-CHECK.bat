@@ -10,7 +10,6 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\WinRAR" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/ > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\WinRAR/" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/7zxa.dll > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\WinRAR/" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Default.SFX > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\WinRAR/" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Default64.SFX > out.txt 2>&1
@@ -35,9 +34,6 @@ curl -o "C:\Users\Public\Desktop\WinRAR/" https://raw.githubusercontent.com/jala
 curl -o "C:\Users\Public\Desktop\WinRAR/" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Zip64.SFX > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\WinRAR/" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/rarnew.dat > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\WinRAR/" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/zipnew.dat > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\VideoLAN" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/VideoLAN/ > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\vlc.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/VideoLAN/VLC/vlc.exe > out.txt 2>&1
-
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
