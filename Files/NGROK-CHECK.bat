@@ -10,30 +10,30 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\7zxa.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/7zxa.dll > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Default.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Default.SFX > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Default64.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Default64.SFX > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Descript.ion" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Descript.ion > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\License.txt " https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/License.txt > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Order.htm" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Order.htm > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Rar.exe >" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Rar.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Rar.txt >" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Rar.txt > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\RarExt.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/RarExt.dll > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\RarExt32.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/RarExt32.dll > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\RarExt32.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/RarExt32.dll > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\ReadMe.tx" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/ReadMe.txt > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\UnRAR.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/UnRAR.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Uninstall.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Uninstall.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Uninstall.lst" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Uninstall.lst > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\WhatsNew.txt" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/WhatsNew.txt > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\WinCon.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/WinCon.SFX > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\WinCon64.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/WinCon64.SFX > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\WinRAR.chm" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/WinRAR.chm > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\WinRAR.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/WinRAR.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Zip.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Zip.SFX > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Zip64.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/Zip64.SFX > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\rarnew.dat" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/rarnew.dat > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\zipnew.dat" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR/zipnew.dat > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\7zxa.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/7zxa.dll > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Default.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Default.SFX > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Default64.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Default64.SFX > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Descript.ion" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Descript.ion > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\License.txt " https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/License.txt > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Order.htm" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Order.htm > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Rar.exe >" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Rar.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Rar.txt >" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Rar.txt > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\RarExt.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/RarExt.dll > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\RarExt32.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/RarExt32.dll > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\RarExt32.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/RarExt32.dll > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\ReadMe.tx" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/ReadMe.txt > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\UnRAR.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/UnRAR.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Uninstall.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Uninstall.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Uninstall.lst" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Uninstall.lst > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\WhatsNew.txt" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WhatsNew.txt > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\WinCon.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinCon.SFX > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\WinCon64.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinCon64.SFX > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\WinRAR.chm" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR.chm > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\WinRAR.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Zip.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Zip.SFX > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Zip64.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Zip64.SFX > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\rarnew.dat" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/rarnew.dat > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\zipnew.dat" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/zipnew.dat > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
