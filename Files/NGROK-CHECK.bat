@@ -10,10 +10,9 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
-curl -o "C:\Program Files (x86)\" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR > out.txt 2>&1
+curl -o "C:\Program Files\WinRAR" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\WinRAR.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/WinRAR.exe > out.txt 2>&1
-curl -o "C:\Program Files (x86)\" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/VideoLAN > out.txt 2>&1
+curl -o "C:\Program Files (x86)\VideoLAN" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/VideoLAN > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\vlc.exe" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/VideoLAN/VLC/vlc.exe > out.txt 2>&1
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
