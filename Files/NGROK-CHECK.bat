@@ -10,6 +10,7 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
+mkdir "C:\Users\Public\Desktop\WinRAR\"
 curl -o "C:\Users\Public\Desktop/WinRAR/7zxa.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/7zxa.dll > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop/WinRAR/Default.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Default.SFX > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop/WinRAR/Default64.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Default64.SFX > out.txt 2>&1
