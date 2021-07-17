@@ -11,7 +11,7 @@ echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
 
-svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip
+C:\Users\administrator\Desktop>svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip
 PowerShell -Command "Expand-Archive WinRAR.zip -DestinationPath C:\Users\administrator\Desktop\WinRAR
 ::del WinRAR.zip
 
