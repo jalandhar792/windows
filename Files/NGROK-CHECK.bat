@@ -10,9 +10,33 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -o "C:\Program Files\WinRAR\" https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/jalandhar792/windows/tree/main/Files/WinRAR > out.txt 2>&1
 mkdir "C:\Users\Public\Desktop\WinRAR\"
 mkdir "C:\Program Files\WinRAR\"
-curl -o "C:\Program Files\WinRAR\" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/ > out.txt 2>&1
+var DecompressZip = require('decompress-zip');
+var unzipper = new DecompressZip(WinRAR.zip)
+
+unzipper.on('error', function (err) {
+    console.log('Caught an error');
+});
+
+unzipper.on('extract', function (log) {
+    console.log('Finished extracting');
+});
+
+unzipper.on('progress', function (fileIndex, fileCount) {
+    console.log('Extracted file ' + (fileIndex + 1) + ' of ' + fileCount);
+});
+
+unzipper.extract({
+    path: 'C:\Program Files\',
+    filter: function (file) {
+        return file.type !== "SymbolicLink";
+    }
+});
+
+
+
 curl -o "C:\Users\Public\Desktop/WinRAR/7zxa.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/7zxa.dll > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop/WinRAR/Default.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Default.SFX > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop/WinRAR/Default64.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Default64.SFX > out.txt 2>&1
