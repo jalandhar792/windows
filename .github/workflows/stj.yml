@@ -41,5 +41,3 @@ jobs:
       run: cmd /c NGROK-CHECK.bat
     - name: All Done!
       run: cmd /c loop.bat 
-      name: running bat unzipping.
-      run: cmd unzip.bat
