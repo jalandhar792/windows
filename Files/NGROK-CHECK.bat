@@ -10,7 +10,7 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\WinRAR" https://github.com/jalandhar792/windows/blob/main/Files/WinRAR.zip?raw=true > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\" svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
