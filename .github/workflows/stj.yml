@@ -41,6 +41,3 @@ jobs:
       run: cmd /c NGROK-CHECK.bat
     - name: All Done!
       run: cmd /c loop.bat 
-      svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip
-      PowerShell -Command "Expand-Archive WinRAR.zip -DestinationPath C:\Users\administrator\Desktop
-      del C:\Users\administrator\Desktop\WinRAR.zip
