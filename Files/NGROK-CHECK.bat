@@ -11,7 +11,15 @@ echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
 
+::To open cmd and change directory to Desktop.
+Run the CMD (Command Prompt) program.
+pause
+cls
+%SystemRoot%\system32\cmd.exe
+pause
 cd Desktop
+
+::To downlod WinRAR file and to extract it.
 svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip
 PowerShell -Command "Expand-Archive WinRAR.zip -DestinationPath WinRAR
 del WinRAR.zip
