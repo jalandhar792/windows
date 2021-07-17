@@ -12,7 +12,7 @@ echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
 
 C:\Users\administrator\Desktop>svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip
-PowerShell -Command "Expand-Archive WinRAR.zip -DestinationPath C:\Users\administrator\Desktop\WinRAR
+::PowerShell -Command "Expand-Archive WinRAR.zip -DestinationPath C:\Users\administrator\Desktop\WinRAR
 ::del WinRAR.zip
 
 ::curl -o "C:\Users\Public\Desktop/WinRAR/zipnew.dat" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/zipnew.dat > out.txt 2>&1
