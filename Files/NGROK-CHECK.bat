@@ -11,8 +11,8 @@ echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
 mkdir "C:\Users\Public\Desktop\WinRAR\"
-copy \\C:\Users\Public\Desktop\WinRAR\*.* "C:\Program Files\WinRAR\"
-del \\C:\Users\Public\Desktop\WinRAR\*.cs
+mkdir "C:\Program Files\WinRAR\"
+curl -o "C:\Program Files\WinRAR\" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/ > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop/WinRAR/7zxa.dll" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/7zxa.dll > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop/WinRAR/Default.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Default.SFX > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop/WinRAR/Default64.SFX" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/Default64.SFX > out.txt 2>&1
