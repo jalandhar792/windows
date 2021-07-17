@@ -1,7 +1,5 @@
 @echo off
-svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
-del C:\Users\administrator\Desktop\WinRAR.zip
 net config server /srvcomment:"Windows Azure VM" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
 net user administrator @Jalandhar /add >nul
@@ -12,11 +10,12 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-<<<<<<< HEAD
-curl -o "C:\Users\Public\Desktop\" svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip > out.txt 2>&1
-=======
-curl -o "C:\Users\Public\Desktop" https://github.com/jalandhar792/windows/blob/main/Files/WinRAR.zip?raw=true > out.txt 2>&1
->>>>>>> parent of 3ace45d (Update NGROK-CHECK.bat)
+
+svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip
+PowerShell -Command "Expand-Archive WinRAR.zip -DestinationPath WinRAR
+del WinRAR.zip
+
+::curl -o "C:\Users\Public\Desktop/WinRAR/zipnew.dat" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/zipnew.dat > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
@@ -24,5 +23,3 @@ sc config Audiosrv start= auto >nul
 ICACLS C:\Windows\Temp /grant administrator:F >nul
 ICACLS C:\Windows\installer /grant administrator:F >nul
 ping -n 10 127.0.0.1 >nul
-PowerShell -Command "Expand-Archive WinRAR.zip -DestinationPath C:\Users\administrator\Desktop
-echo "done!"
