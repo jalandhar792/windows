@@ -10,23 +10,6 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: @Jalandhar
 curl -O https://raw.githubusercontent.com/jalandhar792/windows/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-
-::To open cmd and change directory to Desktop.
-::@echo off
-::echo Run the CMD (Command Prompt) program.
-::pause
-::cls
-::%SystemRoot%\system32\cmd.exe
-::pause
-::cd Desktop
-
-::To downlod WinRAR file and to extract it.
-timeout /t 30
-svn export https://github.com/jalandhar792/windows/trunk/Files/WinRAR.zip
-PowerShell -Command "Expand-Archive WinRAR.zip -DestinationPath WinRAR
-del WinRAR.zip
-
-::curl -o "C:\Users\Public\Desktop/WinRAR/zipnew.dat" https://raw.githubusercontent.com/jalandhar792/windows/main/Files/WinRAR/zipnew.dat > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
