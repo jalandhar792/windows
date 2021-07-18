@@ -1,0 +1,2 @@
+Adobe_Premiere_Pro_2021 filter=lfs diff=lfs merge=lfs -text
+Adobe filter=lfs diff=lfs merge=lfs -text
