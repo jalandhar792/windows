@@ -15,7 +15,6 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/jalandhar792/windows/main/Files/nssm.exe -OutFile nssm.exe
         Invoke-WebRequest https://raw.githubusercontent.com/jalandhar792/windows/main/Files/wallpaper.jpg -OutFile wallpaper.jpg
         Invoke-WebRequest https://raw.githubusercontent.com/jalandhar792/windows/main/Files/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/jalandhar792/windows/main/Files/Chrome.bat -OutFile Chrome.bat
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32
@@ -39,7 +38,6 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
         copy wallpaper.jpg D:\a\wallpaper.jpg
         copy wallpaper.bat D:\a\wallpaper.bat
-        copy Chrome.bat D:\a\Chrome.bat
     - name: Create Tunnel
       run: sc start ngrok
     - name: Connect to your RDP 2core-7GB Ram.
