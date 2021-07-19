@@ -13,6 +13,8 @@ jobs:
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/jalandhar792/windows/main/Files/ngrok.exe -OutFile ngrok.exe
         Invoke-WebRequest https://raw.githubusercontent.com/jalandhar792/windows/main/Files/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/jalandhar792/windows/main/Files/wallpaper.jpg -OutFile wallpaper.jpg
+        Invoke-WebRequest https://raw.githubusercontent.com/jalandhar792/windows/main/Files/wallpaper.bat -OutFile wallpaper.bat
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32
@@ -34,6 +36,8 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
+        copy wallpaper.jpg D:\a\wallpaper.jpg
+        copy wallpaper.bat D:\a\wallpaper.bat
     - name: Create Tunnel
       run: sc start ngrok
     - name: Connect to your RDP 2core-7GB Ram.
