@@ -36,7 +36,7 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
-        copy wallpaper.jpg D:\a\Wall_TG.png
+        copy Wall_TG.png D:\a\Wall_TG.png
         copy wallpaper.bat D:\a\wallpaper.bat
     - name: Create Tunnel
       run: sc start ngrok
